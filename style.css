@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root {
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Verydark-cyan: hsl(179, 100%, 13%);
+--Transparent-white: hsla(0, 0%, 100%, 0.75);
+--Verylight-gray: hsl(0, 0%, 95%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.items {
+    background-color: var(--Verylight-gray);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.item1 {
+    background-color: var(--Bright-orange);
+    min-height: 25rem;
+    max-width: 17rem;
+    padding: 2.5rem;
+    position: relative;
+}
+
+.item2 {
+    background-color: var(--Dark-cyan);
+    min-height: 25rem;
+    max-width: 17rem;
+    padding: 2.5rem;
+    position: relative;
+}
+
+.item3 {
+    background-color: var(--Verydark-cyan);
+    min-height: 25rem;
+    max-width: 17rem;
+    padding: 2.5rem;
+    position: relative;
+}
+
+.image {
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    color: var(--Verylight-gray);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.3rem;
+}
+
+p {
+    color: var(--Verylight-gray);
+    font-family: 'Lexend Deca', sans-serif;
+    margin-top: 1.5rem;
+    margin-bottom: 6rem;
+}
+
+button {
+    position: absolute;
+    background-color: var(--Verylight-gray);
+    border: 2px solid var(--Verylight-gray);
+    text-align: center;
+    padding: 12px 18px;
+    bottom: 0;
+    margin-bottom: 2rem;
+    border-radius: 30px;
+}
+
+.item1 button {
+    color: var(--Bright-orange);
+}
+
+.item2 button {
+    color: var(--Dark-cyan);
+}
+
+.item3 button {
+    color: var(--Verydark-cyan);
+}
+
+button:hover {
+    background-color: transparent;
+    color: var(--Verylight-gray);
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+     color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width:500px) {
+    .items {
+        flex-direction: column;
+        padding: 5rem 0;
+    }
+
+    .item1 .item2 .item3 {
+        min-width: 22rem;
+    }
+}
